@@ -21,8 +21,8 @@ const TableRowData = ({
           <div class="text-gray-500">${customer.name}</div>
         </div>
       </td>
-      <td class="text-gray-500 text-sm">$${thousandSeparator(creditVolume)}</td>
-      <td class="text-gray-500 text-sm">$${thousandSeparator(debitBalance)}</td>
+      <td class="text-gray-500 text-sm">${thousandSeparator(creditVolume)}</td>
+      <td class="text-gray-500 text-sm">${thousandSeparator(debitBalance)}</td>
     </tr>
   `;
 };

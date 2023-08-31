@@ -134,16 +134,12 @@ const TOTAL_DATA = data.length;
 const TOTAL_PAGE = ceil(TOTAL_DATA / PER_PAGE_DATA);
 
 const thousandSeparator = value => {
-	let counter = 0;
-	const arr = value.toString().split("");
-	const res = [];
+	const options = {
+		style: "currency",
+		currency: "USD",
+		minimumFractionDigits: 2,
+		maximumFractionDigits: 2,
+	};
 
-	for (let i = arr.length; i > 0; i--) {
-		res.push(arr[i - 1]);
-		counter++;
-
-		if (counter % 3 === 0 && i !== 1) res.push(",");
-	}
-
-	return res.reverse().join("").concat(".00");
+	return new Intl.NumberFormat("en-US", options).format(value);
 };
