@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Table Pagination</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="w-full flex items-center justify-center h-screen p-5">
+		<div class="bg-white rounded-md border flex flex-col w-full max-w-2xl">
+			<header class="p-4">
+				<h1 class="text-lg font-medium">Assign Credit Line</h1>
+			</header>
+
+			<div class="overflow-x-scroll no-scrollbar">
+				<table class="w-full">
+					<thead class="table-auto">
+						<tr class="text-gray-400 border-y text-left text-sm">
+							<th class="whitespace-nowrap">No.</th>
+							<th class="whitespace-nowrap">Bank</th>
+							<th class="whitespace-nowrap">Sustainability</th>
+							<th class="whitespace-nowrap">Customer</th>
+							<th class="whitespace-nowrap">Credit Volume</th>
+							<th class="whitespace-nowrap">Debit Balance</th>
+						</tr>
+					</thead>
+					<tbody id="data-container"></tbody>
+				</table>
+			</div>
+
+			<footer class="flex items-center justify-between p-3 mt-auto">
+				<div
+					id="pagination-container"
+					class="flex items-center space-x-2"
+				></div>
+
+				<div class="flex items-center justify-end space-x-2">
+					<button
+						class="bg-indigo-500/20 hover:bg-indigo-500/30 duration-100 text-indigo-500 text-sm px-3 py-2 rounded-md font-medium"
+					>
+						Cancel
+					</button>
+					<button
+						class="bg-indigo-500 hover:bg-indigo-600 duration-100 text-white text-sm px-3 py-2 rounded-md font-medium"
+					>
+						Assign Credit Line
+					</button>
+				</div>
+			</footer>
+		</div>
+		<script type="module" src="main.ts"></script>
+	</body>
+</html>

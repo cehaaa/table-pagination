@@ -1,0 +1,8 @@
+table tr th,
+td {
+	padding: 8px 16px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}

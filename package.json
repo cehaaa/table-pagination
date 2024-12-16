@@ -1,0 +1,31 @@
+{
+	"name": "table-pagination",
+	"description": "A simple table pagination",
+	"main": "dist/table-pagination.umd.js",
+	"module": "dist/table-pagination.es.js",
+	"types": "src/types/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/table-pagination.es.js",
+			"require": "./dist/table-pagination.umd.js"
+		}
+	},
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"demo:build": "tsc && vite build --config demo/vite.config.ts",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.2",
+		"typescript": "~5.6.2",
+		"vite": "^6.0.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cehaaa/table-pagination.git"
+	}
+}
